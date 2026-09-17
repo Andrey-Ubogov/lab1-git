@@ -11,6 +11,11 @@ double ellipseArea(double a, double b) {
 	return PI * a * b;
 }
 
+double ellipsePerimeter(double a, double b) {
+	double result = PI * (3 * (a + b) - sqrt((3*a + b) * (a + 3*b)));
+	return result;
+}
+
 // ===== Главная функция: меню =====
 int main() {
 	system("chcp 1251");
@@ -31,11 +36,11 @@ int main() {
 			cin >> a >> b;
 			cout << "Площадь = " << ellipseArea(a, b) << "\n";
 			break;
-		/*case 2:
+		case 2:
 			cout << "Введите стороны a и b: ";
 			cin >> a >> b;
-			//cout << "Периметр = " << rectanglePerimeter(a, b) << "\n";
-			break;*/
+			cout << "Периметр = " << ellipsePerimeter(a, b) << "\n";
+			break;
 		case 0:
 			cout << "Работа завершена.\n";
 			break;
