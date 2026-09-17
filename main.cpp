@@ -13,7 +13,7 @@ double ellipseArea(double a, double b) {
 
 double ellipsePerimeter(double a, double b) {
 	double result = PI * (3 * (a + b) - sqrt((3*a + b) * (a + 3*b)));
-
+	return result;
 }
 
 // ===== Главная функция: меню =====
