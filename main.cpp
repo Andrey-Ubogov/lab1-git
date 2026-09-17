@@ -23,23 +23,24 @@ int main() {
 
 	int choice;
 	double a, b;
+
 	do {
-		cout << "\n=== Вариант 19: расчёты для Эллипса ===\n";
+		cout << "\n=== Вариант 19. Расчёты для Эллипса ===\n";
 		cout << "1. Площадь\n";
 		cout << "2. Периметр\n";
 		cout << "0. Выход\n";
-		cout << "Выберите пункт: ";
+		cout << "Выберите пункт меню: ";
 		cin >> choice;
 		switch (choice) {
 		case 1:
-			cout << "Введите стороны a и b: ";
+			cout << "Введите размеры осей a и b в сантиметрах: ";
 			cin >> a >> b;
-			cout << "Площадь = " << ellipseArea(a, b) << "\n";
+			cout << "Площадь эллипса = " << ellipseArea(a, b) << " см.\n";
 			break;
 		case 2:
-			cout << "Введите стороны a и b: ";
+			cout << "Введите размеры осей a и b в сантиметрах: ";
 			cin >> a >> b;
-			cout << "Периметр = " << ellipsePerimeter(a, b) << "\n";
+			cout << "Периметр эллипса = " << ellipsePerimeter(a, b) << " см.\n";
 			break;
 		case 0:
 			cout << "Работа завершена.\n";
